@@ -3,22 +3,30 @@ import styled from 'styled-components';
 import Logo from '../logo.svg';
 
 const StyledHeader = styled.header`
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
 
-& ul{
+  & img {
+    position: relative;
+    bottom: 15px;
+  }
+
+  & ul {
     display: flex;
     justify-content: space-around;
-}
+    position: relative;
+    bottom: 13px;
+  }
 
-& ul a{
+  & ul a {
     text-decoration: none;
     color: inherit;
     list-style: none;
-    padding: 0 25px;
-}
+    padding-left: 26px;
+    ${'' /* padding: 0 13px; */}
+  }
 `;
 
 const Header = () => (
